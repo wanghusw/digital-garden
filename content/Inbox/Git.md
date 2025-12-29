@@ -1,0 +1,60 @@
+## git 命令
+
+```
+git rm --cached <文件>    # 用于在 git add 后取消暂存
+git commit                # 后面不加 -m "message"，vim 编辑器会弹出，可以记录更加详细的 message。
+git reset --hard <commit> # 回溯到指定状态
+git log # 只能查看以当前状态为终点的历史日志
+git reflog
+```
+
+## 学习资料
+
+- [Git 详细安装教程（详解 Git 安装过程的每一个步骤）](https://blog.csdn.net/mukes/article/details/115693833)
+- [[《GitHub入门与实践》读书笔记]]
+- [Pro Git](https://git-scm.com/book/zh/v2)
+- [Learn Git Branching](https://learngitbranching.js.org/?locale=zh_CN)
+- [Git教程 - 廖雪峰的官方网站](https://liaoxuefeng.com/books/git/introduction/index.html)
+
+## 问题解决
+
+### 测试 SSH 连接
+
+`ssh -T git@github.com` 如果出现以下错误信息：
+```
+ssh: connect to host github.com port 22: Connection refused fatal: Could not read from remote repository. 
+Please make sure you have the correct access rights and the repository exists.
+```
+
+使用以下方法解决：  
+创建或编辑 `~/.ssh/config` 文件：
+```
+Host github.com 
+    Hostname ssh.github.com
+    Port 443 
+    User git
+```
+然后用 `ssh -T git@ssh.github.com -p 443` 命令进行测试。
+
+### 设置全局默认分支名为 `main`
+
+执行 `git config --global init.defaultBranch main`
+
+在刚执行 `git init` 后如果要重命名当前仓库的分支，可以立即执行 `git branch -m master main`。
+
+### 关于 `CRLF` 和 `LF`
+
+在 Windows 系统中设置运行 `git config --global core.autocrlf true` 命令，以解决 `warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it`。
+
+➡具体去看一下 `CRLF` 和 `LF` 的知识。
+
+## 相关内容
+
+- 为 [[GitHub]] 加速：[上万良心软件都在GitHub，你却还卡在无法访问？](https://mp.weixin.qq.com/s/WNW-geAbB2ApsdBHE0WqEg) 🔎 🖨
+	- 使用 [Steamcommunity 302](https://www.dogfight360.com/blog/18682/) 进行加速。
+
+
+```cpp title:test.py
+print("This line is very long and should be used as an example for how the plugin deals with wrapping and unwrapping very long lines given the choice of codeblock parameters and settings.")
+print("This line is highlighted.")
+```
