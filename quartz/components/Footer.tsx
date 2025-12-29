@@ -12,18 +12,21 @@ export default ((opts?: Options) => {
     const year = new Date().getFullYear()
     const links = opts?.links ?? []
     return (
-      <footer class={`${displayClass ?? ""}`}>
-        <p>
-          {i18n(cfg.locale).components.footer.createdWith}{" "}
-          <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
-        </p>
-        <ul>
-          {Object.entries(links).map(([text, link]) => (
-            <li>
-              <a href={link}>{text}</a>
-            </li>
-          ))}
-        </ul>
+      <footer class={`${displayClass ?? ""} custom-footer`}>
+        {/* 👇 替换为你自己的版权信息 */}
+        <p>Created by <a href="https://github.com/wanghusw">Wanghu</a>, © {year}</p>
+        <p></p>
+        
+        {/* 👇 保留可选的链接列表 */}
+        {Object.keys(links).length > 0 && (
+          <ul>
+            {Object.entries(links).map(([text, link]) => (
+              <li key={text}>
+                <a href={link}>{text}</a>
+              </li>
+            ))}
+          </ul>
+        )}
       </footer>
     )
   }

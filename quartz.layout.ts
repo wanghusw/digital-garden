@@ -1,5 +1,8 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { RecentNotes } from "./quartz/components/RecentNotes"
+
+
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -8,8 +11,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/wanghusw/digital-garden",
     },
   }),
 }
@@ -25,6 +27,14 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ContentMeta(),
     Component.TagList(),
   ],
+  afterBody: [
+    Component.RecentNotes({
+      title: "最近的笔记",
+      limit: 3,
+      showTags: false,
+      linkToMore: "/Inbox" // 确保 /notes 页面存在
+    })
+  ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
@@ -39,6 +49,12 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer(),
+    Component.RecentNotes({
+      title: "最近的笔记",
+      limit: 3,
+      showTags: false,
+      linkToMore: "/Inbox" // 确保 /notes 页面存在
+    })
   ],
   right: [
     Component.Graph(),
