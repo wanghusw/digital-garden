@@ -1,3 +1,15 @@
+---
+title: Quartz
+draft: false
+tags:
+  - 
+created: 2025-12-08 21:39
+updated: 2025-12-30 10:23
+date: 2025-12-08
+lastmod: 2025-12-29
+---
+
+
 主要参考资料：
 - [How to publish Obsidian notes with Quartz on GitHub Pages - Fork My Brain](https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages)
 
@@ -123,4 +135,22 @@ jobs:
 
 ## 相关设置记录
 
-### 
+- 发布的静态页面的文件名使用「小写 + 连字符」格式（`hello-world`）
+- 
+
+### 重要设置文件
+
+- `~/digitalgarden/.github/workflows/deploy.yml` 
+- `~/digitalgarden/quartz.layout.ts` 我在这个文件中添加了 `Recent Note` 组件，修改了 footer
+- `~/digitalgarden/quartz/components/Footer.tsx` 这里自定义 footer
+- `~/digitalgarden/quartz.config.ts` 这里设置
+
+### 给代码块加上语言标识
+
+代码块加上语言标识后，quartz 就可以正常显示代码块行号，不用额外进行设置。
+
+### 使用 GitHub Desktop 进行更新
+
+### 多设备管理
+
+在其他设备克隆仓库，运行 `npx quartz build --serve` 进行测试，如果报错，就运行 `npm install`，然后再运行 `npx quartz build --serve` 测试。2025-12-31 14:29:14

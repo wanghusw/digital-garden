@@ -11,7 +11,7 @@ lastmod:
 
 ## VS Code 中 `markdown` 文件代码块显示行号如何设置？
 
-VS Code 中 `markdown` 文件的代码块要显示行号，要安装 `Markdown Preview Enhanced（MPE）` 扩展。代码块按照以下示例写就可以显示行号：
+VS Code 中 `markdown` 文件的代码块要显示行号，要安装 `Markdown Preview Enhanced（MPE）` 扩展。代码块按照以下示例（```` ```text {.line-numbers} ````）写就可以显示行号：
 ```text {.line-numbers}
 代码内容
 ```

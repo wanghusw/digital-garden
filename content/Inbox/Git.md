@@ -1,3 +1,15 @@
+---
+title: Git
+draft: false
+tags:
+  - 
+created: 2025-12-18 09:04
+updated: 2025-12-30 10:35
+date: 2025-12-04
+lastmod: 2025-12-29
+---
+
+
 ## git 命令
 
 ```
@@ -44,9 +56,34 @@ Host github.com
 
 ### 关于 `CRLF` 和 `LF`
 
-在 Windows 系统中设置运行 `git config --global core.autocrlf true` 命令，以解决 `warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it`。
+在 Windows 系统中设置运行 `git config --global core.autocrlf true`（检出时转为 CRLF，提交时转为 LF） 命令，以解决 `warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it`。
+
+在 macOS 系统中对 git 进行如下设置：
+```text
+git config --global core.autocrlf input # 提交时转为 LF，检出时不转换
+```
 
 ➡具体去看一下 `CRLF` 和 `LF` 的知识。
+
+### 关于命令行提示信息中英文
+
+临时方法：在输入命令前面加上 `LANG=C`，比如 `LANG=C git status`。
+
+永久设置方法：将以下内容添加到 shell 配置文件中（如 `~/.bashrc`、`~/.zshrc` 等）：
+```bash
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# 如果只针对 Git 设置，则是：
+alias git=‘LANG=C git’
+```
+bash
+
+编辑
+
+```
+
+```
 
 ## 相关内容
 
