@@ -1,13 +1,12 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
-import { SimpleSlug } from "./quartz/util/path"
 
 const recentNotes = [
   Component.RecentNotes({
     title: "Recent Writing",
     limit: 4,
     showTags: false,
-    filter: (f) => f.slug!.startsWith("Post/"),
+    filter: (f) => true,  // 显示所有文件
     linkToMore: "Post/" // 确保 /notes 页面存在
   }),
   Component.RecentNotes({
