@@ -2,11 +2,12 @@
 title: Git
 draft: false
 tags:
-  - 
+  - git
+  - coding
 created: 2025-12-18 09:04
-updated: 2025-12-30 10:35
+updated: 2026-01-01 23:13
 date: 2025-12-04
-lastmod: 2025-12-29
+lastmod: 2026-01-01
 ---
 
 
@@ -112,3 +113,14 @@ bash
   ```
 3. 在新分支做测试
 
+### 如果产生了大小写不同的两个文件夹
+
+比如远程仓库在 `content` 文件夹下面产生了 `journals` 和 `Journals` 两个文件夹，并且文件被推送到了 `Journals` 文件夹，而本地仓库只有一个 `journals` 文件夹，可以尝试执行以下 git 命令：
+```bash
+# 在 content/ 目录下执行
+git add -A
+git rm -r --cached .        # 清除 Git 缓存
+git add .
+```
+
+这时 `git status` 会看到文件夹进行了重命名，重新推送即可。2026-01-01 23:12:40
