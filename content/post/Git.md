@@ -90,8 +90,25 @@ bash
 - 为 [[GitHub]] 加速：[上万良心软件都在GitHub，你却还卡在无法访问？](https://mp.weixin.qq.com/s/WNW-geAbB2ApsdBHE0WqEg) 🔎 🖨
 	- 使用 [Steamcommunity 302](https://www.dogfight360.com/blog/18682/) 进行加速。
 
+## git gui
 
-```cpp title:test.py
-print("This line is very long and should be used as an example for how the plugin deals with wrapping and unwrapping very long lines given the choice of codeblock parameters and settings.")
-print("This line is highlighted.")
-```
+- UGit
+- Gitkraken
+
+
+## 常用工作流
+
+### 新建分支进行测试
+
+1. 确保当前分支干净，拉取最新主分支
+  ```text
+  git status       # 确保当前分支干净
+  git fetch origin # 拉取最新主分支
+  ```
+
+2. 建立分支 git checkout - b test
+  ```
+  git branch -av   # 查看所有分支
+  ```
+3. 在新分支做测试
+
