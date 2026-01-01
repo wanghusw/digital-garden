@@ -11,7 +11,7 @@ const RecentNotes = [
     }),
     Component.RecentNotes({
       title: "最近的日记",
-      limit: 2,
+      limit: 3,
       showTags: false,
       filter: (f) => f.slug!.startsWith("Journals/"),
       linkToMore: "/Journals" // 确保 /notes 页面存在
@@ -71,7 +71,7 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.RecentNotes({
       title: "最近的日记",
-      limit: 2,
+      limit: 3,
       showTags: false,
       filter: (f) => f.slug!.startsWith("Journals/"),
       linkToMore: "/Journals" // 确保 /notes 页面存在
