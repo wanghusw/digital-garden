@@ -6,8 +6,8 @@ const recentNotes = [
     title: "Recent Writing",
     limit: 4,
     showTags: false,
-    filter: (f) => true,  // 显示所有文件
-    linkToMore: "Post/" // 确保 /notes 页面存在
+    filter: (f) => f.slug!.startsWith("Post/"),
+    linkToMore: "Post/" as SimpleSlug,
   }),
   Component.RecentNotes({
     title: "Recent Notes",
