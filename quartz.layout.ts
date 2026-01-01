@@ -13,6 +13,7 @@ const recentNotes = [
   Component.RecentNotes({
     title: "Recent Notes",
     limit: 3,
+    showTags: false,
     filter: (f) => f.slug!.startsWith("journals/"),
     linkToMore: "journals/" as SimpleSlug,
   }),
