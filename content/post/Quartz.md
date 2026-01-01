@@ -136,14 +136,14 @@ jobs:
 ## 相关设置记录
 
 - 发布的静态页面的文件名使用「小写 + 连字符」格式（`hello-world`）
-- 
 
 ### 重要设置文件
 
 - `~/digitalgarden/.github/workflows/deploy.yml` 
 - `~/digitalgarden/quartz.layout.ts` 我在这个文件中添加了 `Recent Note` 组件，修改了 footer
 - `~/digitalgarden/quartz/components/Footer.tsx` 这里自定义 footer
-- `~/digitalgarden/quartz.config.ts` 这里设置
+- `~/digitalgarden/quartz.config.ts` 这里进行网站设置
+- `/Users/wanghu/digitalgarden/quartz/styles/custom.scss` 这里自定义 css
 
 ### 给代码块加上语言标识
 

@@ -1,8 +1,22 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
-import { RecentNotes } from "./quartz/components/RecentNotes"
 
-
+const RecentNotes = [
+  Component.RecentNotes({
+      title: "最近的笔记",
+      limit: 3,
+      showTags: false,
+      filter: (f) => f.slug!.startsWith("Post/"),
+      linkToMore: "Post/" // 确保 /notes 页面存在
+    }),
+    Component.RecentNotes({
+      title: "最近的日记",
+      limit: 2,
+      showTags: false,
+      filter: (f) => f.slug!.startsWith("Journals/"),
+      linkToMore: "/Journals" // 确保 /notes 页面存在
+    }),
+]
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -28,12 +42,12 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   afterBody: [
-    Component.RecentNotes({
+    /*Component.RecentNotes({
       title: "最近的笔记",
       limit: 3,
       showTags: false,
       linkToMore: "/Inbox" // 确保 /notes 页面存在
-    })
+    })*/
   ],
   left: [
     Component.PageTitle(),
@@ -48,16 +62,30 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
-    Component.RecentNotes({
+      Component.RecentNotes({
       title: "最近的笔记",
       limit: 3,
       showTags: false,
-      linkToMore: "/Inbox" // 确保 /notes 页面存在
-    })
+      filter: (f) => f.slug!.startsWith("Post/"),
+      linkToMore: "Post/" // 确保 /notes 页面存在
+    }),
+    Component.RecentNotes({
+      title: "最近的日记",
+      limit: 2,
+      showTags: false,
+      filter: (f) => f.slug!.startsWith("Journals/"),
+      linkToMore: "/Journals" // 确保 /notes 页面存在
+    }),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+      localGraph: {
+        showTags: false,
+      },
+      globalGraph: {
+        showTags: false,
+      },
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
