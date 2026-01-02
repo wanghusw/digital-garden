@@ -2,11 +2,10 @@
 title: Quartz
 draft: false
 tags:
-  - 
+  - quartz
 created: 2025-12-08 21:39
-updated: 2025-12-30 10:23
-date: 2025-12-08
-lastmod: 2025-12-29
+date: 2026-01-02
+lastmod: 2026-01-02 19:36
 ---
 
 
@@ -18,21 +17,24 @@ lastmod: 2025-12-29
 ### 克隆 Quartz 仓库
 
 打开终端运行一下命令：
-```
+
+```bash
 git clone https://github.com/jackyzha0/quartz.git digitalgarden # digitalgarden 是我的本地文件夹，这里文件夹名称可以按自己要求来
 ```
 
 ### 安装 Quartz 依赖项
 
 用 `cd` 命令切换到 `digitalgarden`，运行：
-```
+
+```bash
 npm i
 ```
 
 ### 初始化 Quartz
 
 运行：
-```
+
+```bash
 npx quartz create
 ```
 
@@ -45,7 +47,8 @@ npx quartz create
 来到 https://github.com/settings/tokens 为其创建 token，为其设置 `repo`、`workflow` 权限，生成 token 并记下它。
 
 然后在终端运行：
-```
+
+```bash
 git remote -v # 查看远程仓库
 git remote rm origin # 删除远程仓库
 git remote add origin https://github.com/wanghusw/digital-garden.git # 添加我自己的远程仓库
@@ -54,28 +57,32 @@ git remote add origin https://github.com/wanghusw/digital-garden.git # 添加我
 ### 将本地文件初次同步到 GitHub
 
 运行：
-```
+
+```bash
 npx quartz sync --no-pull # 将内容首次推送到远程仓库
 ```
 
 ### 在本地构建网站
 
 运行，以在本地预览网站：
-```
+
+```bash
 npx quartz build --serve
 ```
 
 ### 同步文件到 GitHub
 
 运行：
-```
+
+```bash
 npx quartz sync
 ```
 
 ### 创建一个 `deploy.yml` 文件
 
 不管用什么系统，确保隐藏文件可见。在本地 Quartz 文件夹（我的是 `digitalgarden`）路径下创建 `.github/workflows/deploy.yml` 文件。然后将以下内容（不论何时，请到 Quartz 官方文档去寻找最新的内容）复制到该文件：
-```
+
+```bash
 name: Deploy Quartz site to GitHub Pages
  
 on:

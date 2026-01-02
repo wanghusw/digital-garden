@@ -1,5 +1,5 @@
 ---
-title: hghgh
+title: 关于终端（Terminal）
 draft: false
 tags:
   - 
@@ -12,11 +12,11 @@ ter
 ## macOS 终端
 
 - macOS 下更改默认 Shell 为 zsh，执行以下命令：
-  ```
+  ```bash
   cash -s /bin/zsh
   ```
 - 使用以下命令可以查看 mac 使用的 shell 类型：
-  ```
+  ```bash
   echo $0
   
   # 或者
@@ -27,13 +27,13 @@ ter
 ## Windows 终端
 
 查看 PowerShell 当前版本，在 PowerShell 中运行以下任一命令：
-```
+```shell
 $PSVersionTable             # 显示包含版本、编辑模式等详细列表
 $PSVersionTable.PSVersion	# 直接返回主版本号，例如 Major、Minor、Build 号
 ```
 
 安装 PowerShell 7，推荐使用 Winget，在现有的 PowerShell 运营以下命令：
-```
+```shell
 winget install --id Microsoft.PowerShell --source winget
 winget install --id Microsoft.PowerShell.Preview --source winget # 安装预览版
 ```
@@ -76,7 +76,7 @@ PowerShell 7 默认安装在 `C:\Program Files\PowerShell\7\` 目录下。
   可以用 `$PROFILE` 命令查看配置文件位置
 - 为 Windows 终端安装使用 oh-my-posh
   1. 打开 PowerShell 运行以下命令安装（也可以在微软商店安装）：
-      ```
+      ```shell
       winget install JanDeDobbeleer.OhMyPosh -s winget
       ```
   2. 如果重启终端 oh-my-posh 不被识别为命令，此时可以再次运行安装程序，或将它手动添加到 `PATH` 中：

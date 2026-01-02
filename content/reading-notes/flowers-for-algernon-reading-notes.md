@@ -3,11 +3,10 @@ title: 《献给阿尔吉侬的花束》读书笔记
 draft: false
 tags:
   - novel
-  - reading-notes
+  - reading-notes 
 created: 2025-11-14 10:30
-updated: 2025-12-29 11:43
-date: 2025-12-29
-lastmod: 2025-12-29
+date: 2026-01-02
+lastmod: 2026-01-02 18:12
 ---
 
 作者：[美] 丹尼尔·凯斯  

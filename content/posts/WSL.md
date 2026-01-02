@@ -2,20 +2,20 @@
 title: WSL
 draft: false
 tags:
-  - WSL
+  - wsl
 created: 2025-12-15 17:13
-updated: 2026-01-01 08:39
-date: 2025-12-15
-lastmod: 2026-01-01
+date: 2026-01-02
+lastmod: 2026-01-02 19:40
 ---
 
 检查系统中是否安装了 WSL，在 PowerShell 或者 CMD 中运营：
-```
+
+```shell
 wsl --list --verbose # 或者简写：wsl -l -v
 ```
 
 安装 WSL，在 PowerShell 中运行：
-```
+```shell
 wsl --install
 ```
 

@@ -1,12 +1,11 @@
 ---
-title: macOS-tips
+title: macOS Tips
 draft: true
 tags:
   - 
 created: 2025-02-17 09:59
-updated: 2026-01-01 08:31
-date: 2024-01-10
-lastmod:
+date: 2026-01-02
+lastmod: 2026-01-02 17:57
 ---
 
 ## 快捷键

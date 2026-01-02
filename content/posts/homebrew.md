@@ -1,14 +1,26 @@
+---
+title: Homebrew
+draft: false
+tags:
+  - 
+created: 2026-01-02 12:04
+date: 2026-01-02
+lastmod: 2026-01-02 19:24
+---
+
+
 ## 安装
 
 一定可以成功的安装和卸载脚本：
-```
+
+```bash
 /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)" # 安装脚本
 /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh)" # 卸载脚本
 ```
 
 ## 常用命令
 
-```
+```bash
 brew update # 更新 Homebrew
 brew upgrade # 更新所有安装过的软件
 ```
@@ -23,13 +35,13 @@ brew upgrade # 更新所有安装过的软件
 - 用 `which git` 查看 git 安装路径
 - 用 `git --version` 查看 git 版本
 - 输入以下命令修改 git 默认路径
-  ```
+  ```bash
   echo export PATH='/opt/homebrew/Cellar/git/2.48.1/bin:$PATH' >> ~/.bash_profile
   ```
 - 输入 `source .bash_profile` 刷新坏境变量，用最开始提到的命令查看是否成功
 - 用 `vim ./.bash_profile` 打开 `bash_profile` 文件，输入 `i` 进入编辑模式，这时可以编辑内容，编辑好后按 `esc` 退出编辑状态，再按 `:wq` 退出。
 - 我目前的坏境变量如下所示：
-  ```
+  ```text
   export PATH=/usr/local/bin:$PATH
   export PATH=/opt/homebrew/bin:$PATH
   export PATH=/opt/homebrew/Cellar/git/2.48.1/bin:$PATH

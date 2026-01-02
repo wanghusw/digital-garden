@@ -1,4 +1,15 @@
-Obsidian 的 git 插件的 `.gitignore` 文件如下：
+---
+title: Obsidian Git
+draft: false
+tags:
+  - 
+created: 2026-01-02 12:04
+date: 2026-01-02
+lastmod: 2026-01-02 19:29
+---
+
+Obsidian 的 Git 插件的 `.gitignore` 文件如下：
+
 ```text
 # Obsidian 相关
 # .obsidian/plugins/             # 忽略所有已安装的第三方插件（可选：如果你不想同步插件）
@@ -40,5 +51,7 @@ NTUSER.DAT*
 git rm --cached .obsidian/workspace.json
 git commit -m "Remove tracked workspace config"
 ```
+
+添加排除项用`echo "<文件名>" >> .gitignore`
 
 ℹ️[obsidian-git忽略文件配置：.gitignore使用指南-CSDN博客](https://blog.csdn.net/gitblog_01022/article/details/151732100)

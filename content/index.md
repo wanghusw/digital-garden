@@ -2,14 +2,13 @@
 title: 欢迎来到王虎的数字花园
 draft: false
 tags:
-  - 
-created: 2025-12-08 22:57
-updated: 2026-01-01 14:18
-date: 2025-12-08
-lastmod: 2026-01-01
+  - about
+created: 2026-01-02 12:04
+date: 2026-01-02
+lastmod: 2026-01-02 19:40
 ---
 
-## About the garden
+## About the Garden
 
 Hello 👋，我是王虎🐯，终身学习者，爱好读书、时间记录、做笔记、散步，以及一切感兴趣的新东西。
 

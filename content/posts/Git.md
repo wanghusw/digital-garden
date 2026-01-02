@@ -1,22 +1,35 @@
 ---
-title: Git
+title: git
 draft: false
 tags:
   - git
   - coding
 created: 2025-12-18 09:04
-date: 2025-12-29
-lastmod: 2026-01-02 02:19
+date: 2026-01-02
+lastmod: 2026-01-02 11:45
 ---
 
+## 常用 git 命令
 
+### `git mv`
 
-## git 命令
+使用该命令时要使用完整路径，要注意不要少了扩展名，如果路径和文件名中有特殊符号，要用 `’‘` 将其括起来。
 
+对文件夹重命名时，如果仅仅是大小写变化，用两步法：
+```bash
+git mv Posts temp_dir
+git mv temp-dir posts
 ```
+
+### `git rm`
+
+在 Obsidian 中删除文件的推荐流程是先删除文件，然后再在 git 里面 `git rm`。
+
+```text
 git rm --cached <文件>    # 用于在 git add 后取消暂存
 git commit                # 后面不加 -m "message"，vim 编辑器会弹出，可以记录更加详细的 message。
 git reset --hard <commit> # 回溯到指定状态
+git reset --hard HEAD     # 彻底放弃所有未提交的更改
 git log # 只能查看以当前状态为终点的历史日志
 git reflog
 ```
@@ -107,11 +120,17 @@ bash
   git fetch origin # 拉取最新主分支
   ```
 
-2. 建立分支 git checkout - b test
-  ```
+2. 建立分支 `git checkout - b test`
+  ```text
   git branch -av   # 查看所有分支
   ```
+
 3. 在新分支做测试
+4. 如果新分支落后于主分支，则：
+```bash
+git checkout test
+git merge main
+```
 
 ### 如果产生了大小写不同的两个文件夹
 
