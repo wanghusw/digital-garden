@@ -15,6 +15,7 @@ ter
   ```bash
   cash -s /bin/zsh
   ```
+
 - 使用以下命令可以查看 mac 使用的 shell 类型：
   ```bash
   echo $0
