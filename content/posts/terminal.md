@@ -69,7 +69,10 @@ PowerShell 7 默认安装在 `C:\Program Files\PowerShell\7\` 目录下。
 	- 当前用户的 Profile 的路径在 `$HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`。
 	- 不能用官方提供的设置方法来设置主题，我需要把主题从安装路径手动复制到我想存放的地方，比如 `F:\Documents\MyPoshThemes`。
 
+## 终端列表
 
+- [WezTerm - Wez's Terminal Emulator](https://wezterm.org/)
+- [Termius - Modern SSH Client](https://termius.com/)
 
 以下为旧内容：
 -----------
