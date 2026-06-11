@@ -161,3 +161,8 @@ jobs:
 ### 多设备管理
 
 在其他设备克隆仓库，运行 `npx quartz build --serve` 进行测试，如果报错，就运行 `npm install`，然后再运行 `npx quartz build --serve` 测试。2025-12-31 14:29:14
+
+## 从 v4 升级到 v5
+
+参考资料：[Migrating to Quartz 5](https://quartz.jzhao.xyz/getting-started/migrating)
+
