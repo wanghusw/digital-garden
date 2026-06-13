@@ -1,21 +1,4 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
-/* 1. 定义本地字体 */
-@font-face {
-  font-family: 'Source Han Serif SC';
-  font-style: normal;
-  font-weight: 200 900;
-  src: url('/fonts/SourceHanSerifSC-VF.otf.woff2') format('woff2-variations');
-}
 
-/* 2. 你可以直接覆盖CSS变量（如果主题使用） */
-:root {
-  --header-font: 'Source Han Serif SC', serif;
-}
-
-/* 3. 或者直接对元素进行样式覆盖（更直接） */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Source Han Serif SC', serif;
-  font-weight: 700; // 使用可变字体的粗重
-}
