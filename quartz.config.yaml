@@ -80,6 +80,9 @@ plugins:
   - source: github:quartz-community/table-of-contents
     enabled: true
     order: 50
+    options:
+      layout: modern
+      maxDepth: 6
     layout:
       position: right
       priority: 30
@@ -256,13 +259,6 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
-  - source:
-      name: quartz-themes
-      repo: github:saberzero1/quartz-themes
-      subdir: plugin
-    enabled: true
-    options:
-      theme: default
   - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:
