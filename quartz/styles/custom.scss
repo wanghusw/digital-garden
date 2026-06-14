@@ -1,4 +1,65 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// 1. 统一覆盖 Quartz 字体变量
+:root {
+  // 这里的名字必须匹配你 Head.tsx 引入的 CSS 中的名字
+  --headerFont: "LXGW WenKai", serif;
+  --bodyFont: "LXGW WenKai", sans-serif;
+}
+
+// 2. 强制对标题和正文应用样式，并优化中文排版
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headerFont);
+  font-weight: 600; // 文楷通常 600 粗细最平衡
+}
+
+body, section {
+  font-family: var(--bodyFont);
+  line-height: 1.8;       // 调高行高，文楷这种楷体类字体需要呼吸感
+  letter-spacing: 0.02em; // 增加微小字间距，提升阅读舒适度
+}
+
+// 3. 调小目录 (TOC)
+// 针对目录 (Table of Contents) 的深度优化
+.toc {
+  font-size: 0.8rem; 
+  
+  & > button {
+    margin-bottom: 0.5rem; // 缩小“Table of Contents”标题与列表的距离
+    & > h2 {
+      font-size: 0.85rem !important;
+      font-weight: 600;
+      color: var(--gray);
+    }
+  }
+
+  & #toc-content {
+    ul {
+      margin: 0; // 移除嵌套列表的默认外边距
+      padding-left: 1rem; // 设置合适的层级缩进
+    }
+
+    li {
+      margin: 0 !important; // 彻底移除列表项的上下间距
+      padding: 0.1rem 0;   // 使用极小的内边距来微调行间距
+      
+      a {
+        font-size: 0.75rem; // 字号稍微再调小一点点
+        line-height: 1.3;   // 紧凑的行高
+        color: var(--darkgray);
+        display: block;     // 让点击区域充满整行
+        
+        &:hover {
+          color: var(--secondary);
+          text-decoration: none;
+        }
+
+        &.active {
+          color: var(--tertiary);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
 
