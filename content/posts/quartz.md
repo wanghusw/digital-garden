@@ -5,7 +5,7 @@ tags:
   - quartz
 created: 2025-12-08 21:39
 date: 2026-01-02
-lastmod: 2026-01-02 19:36
+lastmod: 2026-06-14 17:58
 ---
 
 
@@ -169,6 +169,15 @@ jobs:
 1. **保存** > **压缩 Excalidraw JOSN** 处于 **关闭** 状态。
 2. **保存** > **文件名** > **文件扩展名** 处于 **打开** 状态，即使用 `.excalidraw.md` 作为扩展名。
 
+### theme 插件的问题
+
+theme 插件会导致页面出现问题，如默认的图谱边框小时，**Table of Contents** 收起后被压缩以致看不见，另外它体积很大，有 800 多兆，所以把它删掉比较好。
+
+### 将字体改为霞鹜文楷并把目录大纲字体改小
+
+在 `quartz/components/Head.tsx`、`quartz/styles/custom.scss` 中做修改，文件我已经保存备份。
+
+### 待解决的问题
 
 
 ## 从 v4 升级到 v5
@@ -346,10 +355,8 @@ npm install
 npx quartz plugin install
 ```
 
-以上两步，如果出现网络问题，按照 [[#^ec93c3|设置 npm 代理]] 处理。
+以上两步，如果出现网络问题，按照 [[quartz#^ec93c3|设置 npm 代理]] 处理。
 
 #### 本地预览
 
 运行 `npx quartz build --serve`，访问 `localhost:8080` 检验是否正常。
-
-
