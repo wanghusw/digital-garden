@@ -5,8 +5,7 @@ tags:
   - reading-notes
 created: 2025-05-19 08:50
 date: 2026-05-19
-lastmod: 2026-06-13 23:24
-permalink: posts/the-millionaire-next-door-reading-notes
+lastmod: 2026-06-15 00:24
 ---
 
 作者：[美] 托马斯·斯坦利 [美]威廉·丹科

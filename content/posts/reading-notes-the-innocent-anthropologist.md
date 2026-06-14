@@ -6,8 +6,7 @@ tags:
   - non-fiction
 created: 2025-07-13 08:26
 date: 2025-07-13
-lastmod: 2026-06-14 23:01
-permalink: posts/the-innocent-anthropologist-reading-notes
+lastmod: 2026-06-15 00:24
 ---
 
 作者: [英]奈吉尔·巴利

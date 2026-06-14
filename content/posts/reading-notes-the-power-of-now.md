@@ -6,8 +6,7 @@ tags:
   - non-fiction
 created: 2025-01-23 12:04
 date: 2025-01-23
-lastmod: 2026-06-14 22:55
-permalink: posts/the-power-of-now-reading-notes
+lastmod: 2026-06-15 00:25
 ---
 
 作者：埃克哈特・托利（Eckhart Tolle）
