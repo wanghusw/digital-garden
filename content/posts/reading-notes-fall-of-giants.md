@@ -6,18 +6,14 @@ tags:
   - reading-notes
 created: 2026-06-05 11:06
 date: 2026-06-05
-lastmod: 2026-06-13 22:42
+lastmod: 2026-06-15 15:30
 ---
 
-title: 《巨人的陨落》读书笔记
-draft: false
-tags:
-  - novel
-  - reading-notes
-created: 2026-06-05 11:06
-date: 2026-06-05
-lastmod: 2026-06-13 22:
-
+作者：[英] 肯·福莱特  
+译者：于大卫  
+出版社：江苏凤凰文艺出版社  
+出版年：2016-05-01  
+阅读渠道：图书馆借阅
 
 ## Part 1 天地失色
 
