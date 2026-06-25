@@ -5,7 +5,7 @@ tags:
   - PKM
 created: 2026-04-24 15:15
 date: 2026-04-24
-lastmod: 2026-06-14 23:49
+lastmod: 2026-06-25 17:49
 ---
 
 ## 参考资料及查询工具：
@@ -14,8 +14,22 @@ lastmod: 2026-06-14 23:49
 - [恕我直言，做好文件管理就能上知天文下知地理](https://mp.weixin.qq.com/s/JIXs-y-2wTRUTg3cg5r8Bg) [🔎](es://202204131542_恕我直言，做好文件管理就能上知天文下知地理) [🖨](file://D:\Wanghu\Attachment\202204131542_恕我直言，做好文件管理就能上知天文下知地理.html)
 - 中图法：[中图分类号 1](https://ztflh.xhma.com/)，[中图分类号 2](https://www.clcindex.com/)
 - 查询中文图书分类号：[中国国家版本馆（PDC）](https://pdc.capub.cn/)
-- 查询英文图书分类号：[OCLC Classify -- an Experimental Classification Service](http://classify.oclc.org/classify2/)、[欢迎来到开放图书馆 | 开放图书馆](https://openlibrary.org/)、[国外类似于豆瓣的书评网站](https://www.douban.com/note/702360578/?_i=9606840WMdM_U2)、[OCLC：成员驱动的全球性合作机制](https://www.oclc.org/zh-Hans/home.html)、[WorldCat.org](https://www.worldcat.org/zh-cn)
 - [全国新书目_国家版本数据中心数据服务平台](https://cnpub.com.cn/)
+- 
+### 查询英文图书分类号
+
+#### 最新可用
+
+- [MDS: Melvil Decimal System | LibraryThing](https://www.librarything.com/mds)
+- [欢迎来到开放图书馆 | 开放图书馆](https://openlibrary.org/)
+- [Library of Congress Catalog | Library of Congress](https://catalog.loc.gov/)
+- [Goodreads | Meet your next favorite book](https://www.goodreads.com/)
+- 美国国会图书馆分类大纲：[Library of Congress Classification Outline - Classification - Cataloging and Acquisitions (Library of Congress)](https://www.loc.gov/catdir/cpso/lcco/)
+- [OCLC：成员驱动的全球性合作机制](https://www.oclc.org/zh-Hans/home.html)
+- [WorldCat.org](https://www.worldcat.org/zh-cn)
+
+[OCLC Classify -- an Experimental Classification Service](http://classify.oclc.org/classify2/)、[国外类似于豆瓣的书评网站](https://www.douban.com/note/702360578/?_i=9606840WMdM_U2)、
+
 
 ## 一些注意事项：
 
