@@ -5,17 +5,21 @@ tags:
   - PKM
 created: 2026-04-24 15:15
 date: 2026-04-24
-lastmod: 2026-06-25 17:49
+lastmod: 2026-07-02 16:59
 ---
 
 ## 参考资料及查询工具：
 
 - 杜威十进制分类法：[杜威十进制图书分类法列表](https://zh.m.wikipedia.org/zh-cn/杜威十進位圖書分類法列表) [🔎](es://202207111154_杜威十进制图书分类法列表) [🖨](file://D:\Wanghu\Attachment\202207111154_杜威十进制图书分类法列表.html)
+- [OCLC: Worldwide, member-driven library organization](https://www.oclc.org/en/home.html)
 - [恕我直言，做好文件管理就能上知天文下知地理](https://mp.weixin.qq.com/s/JIXs-y-2wTRUTg3cg5r8Bg) [🔎](es://202204131542_恕我直言，做好文件管理就能上知天文下知地理) [🖨](file://D:\Wanghu\Attachment\202204131542_恕我直言，做好文件管理就能上知天文下知地理.html)
 - 中图法：[中图分类号 1](https://ztflh.xhma.com/)，[中图分类号 2](https://www.clcindex.com/)
 - 查询中文图书分类号：[中国国家版本馆（PDC）](https://pdc.capub.cn/)
 - [全国新书目_国家版本数据中心数据服务平台](https://cnpub.com.cn/)
+- 华东师范大学图书馆：[杜威十进分类法](https://lib.ecnu.edu.cn/dwsjflf_42106/list.htm)
 - 
+
+
 ### 查询英文图书分类号
 
 #### 最新可用
